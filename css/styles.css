@@ -12173,3 +12173,9 @@ html {
 .read-more:hover {
   text-decoration: underline;
 }
+
+@media only screen and (max-width: 600px) {
+  .blog, .testimonials {
+    padding: 10px;
+  }
+}
