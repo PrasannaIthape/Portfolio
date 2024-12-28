@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { HashRouter as Router, Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 // import { HashRouter } from "react-router-dom";
 
 import Home from "./components/home";
@@ -17,24 +17,22 @@ import Blog from "./pages/blog";
 
 function App() {
   return (
-    
-      <Router>
-        <Navbar />
+    <Router>
+      <Navbar />
 
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/resume" element={<Resume />} />
-          <Route path="/skills" element={<Skills />} />
-          <Route path="/achievements" element={<Achievements />} />
-          <Route path="/project" element={<Project />} />
-          <Route path="/blog" element={<Blog />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/contact" element={<Contact />} />
-          {/* Uncomment and add other routes as needed */}
-        </Routes>
-        <Footer />
-      </Router>
-    
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/resume" element={<Resume />} />
+        <Route path="/skills" element={<Skills />} />
+        <Route path="/achievements" element={<Achievements />} />
+        <Route path="/project" element={<Project />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/testimonials" element={<Testimonials />} />
+        <Route path="/contact" element={<Contact />} />
+        {/* Uncomment and add other routes as needed */}
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
