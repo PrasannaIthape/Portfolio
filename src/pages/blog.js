@@ -29,11 +29,11 @@ const Blog = () => {
 
   return (
     <section className="blog">
-      <div className="container px-5 my-5">
+      <div className="container my-5">
         <div className="card shadow border-0 rounded-4 mb-5">
-          <div className="card-body p-5">
+          <div className="card-body">
             <h2 className="text-gradient d-inline">My Blog</h2>
-            <div className="blog-list">
+            <div className="blog-list mt-4">
               {blogPosts.map((post, index) => (
                 <div className="blog-post" key={index}>
                   <h3 className="post-title">{post.title}</h3>
